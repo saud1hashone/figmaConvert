@@ -12,8 +12,8 @@ const SectionSix = () => {
               <hr className="bg-pink-400 w-2 h-1" />
             </span>
 
-            <h1 className="text-2xl md:text-3xl mt-3 capitalize mb-3 text-[#2D3958] w-full md:w-[25vw] font-bold leading-[35px] md:leading-[45px]">
-              We use a multi-channel social media approach.
+            <h1 className="text-2xl md:text-4xl mt-3 capitalize mb-3 text-[#2D3958] w-full md:w-[30vw] font-bold leading-[35px] md:leading-[45px]">
+              We use a multi-channel social media approach<span className="text-blue-600">.</span>
             </h1>
           </div>
           <div className="w-full md:w-[33vw] text-[#637ca0]">
@@ -22,7 +22,8 @@ const SectionSix = () => {
               strategic target on each platform to hit the right target
               population you wish; <br /> <br /> we can fulfill your social
               media goals and establish a community instead of just taking a
-              typical UA approach.
+              typical UA approach span
+              
             </p>
           </div>
         </div>

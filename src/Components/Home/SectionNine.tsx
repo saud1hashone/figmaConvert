@@ -5,7 +5,7 @@ const SectionNine = () => {
   return (
     <>
       <div className="main bg-[#f9fafb]">
-        <div className="px-[10%] py-[7%] flex flex-col justify-center text-center items-center w-[60%] mx-auto">
+        <div className="px-[10%] py-[7%] flex flex-col justify-center text-center items-center w-[100%] md:w-[40%] mx-auto">
           <h1 className="text-center text-2xl text-[#2d3958] font-bold  capitalize">
             We've helped brands of all kinds and businesses of every size grow
             their online presense

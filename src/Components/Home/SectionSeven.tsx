@@ -26,8 +26,8 @@ const SectionSeven = () => {
                   Best Work Showcase
                 </h1>
               </div>
-              <div className="w-[42vw] text-[#393939] text-sm text-center capitalize">
-                <p>
+              <div className="w-[90vw] md:w-[41vw] text-[#393939] text-sm text-center capitalize mb-4 font-semibold">
+                <p className="text-center w-full">
                   Driven by our passion for the industry, and our team's, Arabia
                   Talents have created some of the most engaging influencer
                   campaigns in gaming, sports, technology and more.
@@ -35,6 +35,9 @@ const SectionSeven = () => {
               </div>
             </div>
             <CarouselSize image={image} />
+            <div className="flex justify-center mt-5">
+              <img src="/carouseldot.png" alt="" />
+            </div>
           </div>
         </div>
       </div>

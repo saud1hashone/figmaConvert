@@ -18,7 +18,6 @@ const Footer = () => {
             </div>
           </div>
           <div className="box2 order-first md:order-none">
-            {" "}
             <img src="/lastlogo.png" alt="Arabia Talents Logo" className="w-32 md:w-auto" />
           </div>
           <div className="box1 w-full md:w-[50%]">

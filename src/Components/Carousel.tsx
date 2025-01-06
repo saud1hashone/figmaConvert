@@ -20,13 +20,13 @@ export function CarouselSize({ image }: { image: typeOfCarousel[] }) {
       opts={{
         align: "start",
       }}
-      className="w-[80%]"
+      className="w-[82%]"
     >
       <CarouselContent>
         {image.map((data:typeOfCarousel, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
             <div className="p-1">
-              <Card className="bg-transparent border-transparent relative h-[300px]">
+              <Card className="bg-transparent border-transparent relative h-[320px]">
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   <Image fill className="object-center rounded-3xl" src={data.image} alt="image"  />
                 </CardContent>

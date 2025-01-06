@@ -36,28 +36,26 @@ const SectionFive = () => {
         <div className="bg-[#18212e] flex flex-col justify-end items-center relative text-center m-auto w-full md:w-[55vw] text-white h-[30vh]">
           <div className="absolute rounded-3xl -top-24 md:-top-32 left-1/2 transform -translate-x-1/2">
             <div className="bg-blue-600">
-              <Image
-                width={500}
-                height={500}
+              <img
                 src="/Overlay.png"
                 alt="overlay"
-                className="w-[300px] md:w-[500px] h-auto"
+                className="w-[600px] md:w-[700px] h-auto"
               />
             </div>
             <Image
               src="/playvideo.png"
               width={50}
               height={10}
-              className="absolute top-16 md:top-24 left-32 md:left-56 w-8 md:w-12"
+              className="absolute top-16 md:top-20 left-10 md:left-48 w-8 md:w-12"
               alt="Play video button"
             />
           </div>
 
-          <div className="flex flex-wrap md:flex-nowrap justify-around text-center items-center gap-5 md:gap-10 pb-5">
+          <div className="flex flex-wrap md:flex-nowrap justify-around text-center items-center gap-5 md:gap-10 pb-5 md:px-[10%]">
             {stats.map((curElem, curIndex) =>(
               <div key={curIndex} className="w-[40%] md:w-auto">
                 <h1 className="text-xl md:text-3xl">{curElem.value}</h1>
-                <p className="text-sm md:text-base">{curElem.label}</p>
+                <p className="text-[.7rem] md:text-[.8rem]">{curElem.label}</p>
               </div>
             ))}
           </div>
