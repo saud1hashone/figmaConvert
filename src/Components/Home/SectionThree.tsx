@@ -49,7 +49,7 @@ const SectionThree = () => {
       </div>
 
       <div className="px-[5%] md:px-[10%]">
-        <div className="flex flex-col md:flex-row justify-evenly items-center gap-5 mb-12">
+        <div className="flex flex-col md:flex-row justify-evenly items-center gap-5 mt-7 mb-12">
           {cardData.map((card, index) => (
             <Card
               key={index}

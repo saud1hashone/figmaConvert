@@ -9,15 +9,15 @@ const Toggle = () => {
   };
   return (
     <>
-      <div className="flex items-center justify-center px-[10%] py-[4%] ">
+      <div className="flex items-center justify-center px-[5%] py-[4%] ">
         <div
-          className={`flex items-center bg-blue-600 gap-2 w-12 py-1 px-2 rounded-full`}
+          className={`flex items-center bg-white gap-2 w-10 py-1 px-1 rounded-3xl`}
         >
           <div
             onClick={onClick}
             className={`${
               isOn
-                ? "bg-white transition-colors duration-400"
+                ? "bg-blue-600 transition-colors duration-400"
                 : "bg-transparent"
             } w-3 h-3 rounded-full`}
           ></div>
@@ -26,7 +26,7 @@ const Toggle = () => {
             className={`${
               isOn
                 ? "bg-transparent "
-                : "bg-white  transition-colors duration-400"
+                : "bg-blue-600  transition-colors duration-400"
             } w-3 h-3 rounded-full`}
           ></div>
         </div>

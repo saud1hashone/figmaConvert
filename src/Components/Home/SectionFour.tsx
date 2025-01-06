@@ -3,17 +3,17 @@ const SectionFour = () => {
     <div className="px-[5%] md:px-[20%] mb-10 md:mb-20">
       <div className="flex flex-col pt-10 md:pt-20">
         <div className="content px-[5%] md:px-[22%] items-center justify-center flex flex-col pb-5">
-          <span className="flex items-center gap-1 text-green-400 font-semibold bg-green-200 py-1.5 text-sm px-3">
-            <hr className="bg-green-400 w-2 h-1" />
+          <span className="flex items-center gap-1 text-[#29ccb1] font-semibold bg-[#eafaf8] py-1.5 text-sm px-3">
+            <hr className="bg-[#29ccb1] w-2 h-1" />
             <span>Our Rosters</span>
-            <hr className="bg-green-400 w-2 h-1" />
+            <hr className="bg-[#29ccb1] w-2 h-1" />
           </span>
 
           <h1 className="text-2xl md:text-3xl mt-3 mb-3 text-[#2D3958] font-bold leading-[35px] md:leading-[45px] text-center">
             Discover Our Talents
           </h1>
 
-          <p className="text-[#6e7Ca0] capitalize text-[.8rem] font-semibold w-full md:w-[40vw] text-center leading-[20px] px-4 md:px-0">
+          <p className="text-[#6e7Ca0] capitalize text-[.8rem] font-medium w-full md:w-[40vw] text-center leading-[20px] px-4 md:px-0">
             We do manage an exclusive roster of talent, from content creadtors
             and social media influencers to Esports commentators, and even
             hosts. We work with a plethora of great talents.
@@ -63,8 +63,8 @@ const SectionFour = () => {
                 level up your sports events level.
               </p>
               <div className="flex items-center justify-center md:justify-start pl-1 py-2 gap-2">
-                <button className="text-sm text-[#0083ff]">
-                  Meet the Faces
+                <button className="text-sm text-[#2d3958]">
+                 Discover the List
                 </button>
                 <img width={8} height={8} src="/playblack.png" alt="Play icon" />
               </div>

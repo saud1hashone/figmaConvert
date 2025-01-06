@@ -12,10 +12,12 @@ const SectionFive = () => {
     <div className="bg-[#f9fafb] px-[5%] md:px-[10%] flex flex-col gap-24 md:gap-40 pb-8 md:pb-16 mb-8 md:mb-12">
       <div className="flex flex-col pt-10 md:pt-20">
         <div className="content px-[5%] md:px-[22%] items-center justify-center flex flex-col pb-5">
-          <div className="flex items-center gap-1 text-purple-400 font-semibold bg-purple-200 py-1.5 text-sm px-3">
-            <hr className="bg-purple-400 w-2 h-1" />
+          <div className="flex items-center gap-1 text-[#a044ff] font-medium bg-purple-200 py-1.5 text-sm px-3">
+            <hr className="bg-[#a044ff]" />
+            -
             <span>Our Video</span>
-            <hr className="bg-purple-400 w-2 h-1" />
+            -
+            <hr className="bg-[#a044ff]" />
           </div>
 
           <h1 className="text-2xl md:text-3xl mt-3 mb-3 text-[#2D3958] font-bold leading-[35px] md:leading-[45px] text-center">
