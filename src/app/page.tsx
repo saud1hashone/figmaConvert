@@ -1,13 +1,13 @@
-import SectionOne from "@/Components/Home/SectionOne";
-import SectionTwo from "@/Components/Home/SectionTwo";
-import SectionThree from "@/Components/Home/SectionThree";
-import SectionFour from "@/Components/Home/SectionFour";
-import SectionFive from "@/Components/Home/SectionFive";
-import SectionSix from "@/Components/Home/SectionSix";
-import SectionSeven from "@/Components/Home/SectionSeven";
-import SectionEight from "@/Components/Home/SectionEight";
-import SectionNine from "@/Components/Home/SectionNine";
-import Toggle from "@/Components/Card/Toggle";
+import SectionOne from "@/components/Home/SectionOne";
+import SectionTwo from "@/components/Home/SectionTwo";
+import SectionThree from "@/components/Home/SectionThree";
+import SectionFour from "@/components/Home/SectionFour";
+import SectionFive from "@/components/Home/SectionFive";
+import SectionSix from "@/components/Home/SectionSix";
+import SectionSeven from "@/components/Home/SectionSeven";
+import SectionEight from "@/components/Home/SectionEight";
+import SectionNine from "@/components/Home/SectionNine";
+import Toggle from "@/components/card/Toggle";
 
 export default function Home() {
   return (

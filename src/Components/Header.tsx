@@ -1,5 +1,6 @@
 import React from "react";
-import Toggle from "./Card/Toggle";
+import Toggle from "./card/Toggle";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -16,7 +17,7 @@ const Header = () => {
           </div>
           <div className="flex items-center">
             <span>Light</span>
-           <Toggle/>
+            <Toggle />
             <span>Dark</span>
           </div>
           <div className="flex items-center gap-3">
@@ -87,7 +88,7 @@ const Header = () => {
 
           <div className="flex bg-[#0083ff] items-center px-3 rounded-md">
             <button className="font-semibold pr-2 py-1.5 text-white">
-              Let's Talk
+              <Link href="/lets-talk">Let's Talk</Link>
             </button>
             <img src="/play.png" width={8} height={4} alt="play" />
           </div>

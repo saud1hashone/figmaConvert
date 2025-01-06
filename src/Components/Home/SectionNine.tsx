@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const SectionNine = () => {
   return (
@@ -15,10 +16,10 @@ const SectionNine = () => {
             started!
           </p>
           <span className="bg-[#0083ff] rounded-md px-4 py-2 mt-4 font-bold">
-            <button className="text-white cursor-pointer flex items-center gap-2">
+            <Link href="/lets-talk" className="text-white cursor-pointer flex items-center gap-2">
               Lets Talk
               <Image src="/play.png" alt="play" width={8} height={8} />
-            </button>
+            </Link>
           </span>
         </div>
       </div>
