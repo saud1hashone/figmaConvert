@@ -33,7 +33,7 @@ const SectionFive = () => {
       </div>
 
       <div>
-        <div className="bg-[#18212e] flex flex-col justify-end items-center relative text-center m-auto w-full md:w-[55vw] text-white h-[30vh]">
+        <div className="bg-[#18212e] flex flex-col justify-end items-center relative text-center m-auto w-full md:w-[55vw] text-white h-[20vh] md:h-[30vh]">
           <div className="absolute rounded-3xl -top-24 md:-top-32 left-1/2 transform -translate-x-1/2">
             <div className="bg-blue-600">
               <img

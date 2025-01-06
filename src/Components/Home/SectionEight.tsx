@@ -4,7 +4,7 @@ const SectionEight = () => {
       <div className="container flex flex-col md:flex-row gap-8 md:gap-0">
         <div className="part1 flex flex-col justify-center items-center">
           <div className="subpart w-full md:w-[65%] flex gap-3 flex-col text-center md:text-left">
-            <h1 className="text-2xl md:text-3xl capitalize text-[#2d3958] font-bold">
+            <h1 className="mb-2 text-2xl md:text-3xl capitalize text-[#2d3958] font-bold">
               We generated 3x more engagement in 2022
             </h1>
             <p className="text-[#6e7ca0] capitalize text-sm md:text-base">
@@ -29,7 +29,7 @@ const SectionEight = () => {
           <h1 className="text-xl md:text-2xl py-4 text-[#2d3958] font-bold capitalize text-center">
             Thank you for supporting our talents
           </h1>
-          <div className="images grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4  md:gap-2 py-5">
+          <div className="images grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-2 py-5 cursor-pointer">
             <div className="w-[120px] md:w-[150px] h-[50px] md:h-[60px]">
               <img src="/img81.png" className="w-full h-full object-contain" alt="Client logo 1" />
             </div>
