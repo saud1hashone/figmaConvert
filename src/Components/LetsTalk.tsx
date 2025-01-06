@@ -33,24 +33,27 @@ export function LetsTalk() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="max-w-[800px] mx-auto">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="max-w-[500px] mx-auto my-10"
+    >
       <input
         {...register("firstName")}
         required
         placeholder="First name"
-        className="block w-full box-border rounded border border-white px-[15px] py-[10px] mb-[15px] text-sm font-sans"
+        className="block w-full box-border rounded border-2 border-blue-500 px-[15px] py-[10px] mb-[15px] text-sm font-sans"
       />
       <input
         {...register("lastName")}
         placeholder="Last name"
-        className="block w-full box-border rounded border border-white px-[15px] py-[10px] mb-[15px] text-sm font-sans"
+        className="block w-full box-border rounded border-2 border-blue-500 px-[15px] py-[10px] mb-[15px] text-sm font-sans"
       />
       <input
         {...register("Email")}
         placeholder="youremail@domain.com"
         required
         type="email"
-        className="block w-full box-border rounded border border-white px-[15px] py-[10px] mb-[15px] text-sm font-sans"
+        className="block w-full box-border rounded border-2 border-blue-500 px-[15px] py-[10px] mb-[15px] text-sm font-sans"
       />
       <input
         {...register("phoneNumber")}
@@ -58,11 +61,11 @@ export function LetsTalk() {
         required
         type="number"
         minLength={10}
-        className="block w-full box-border rounded border border-white px-[15px] py-[10px] mb-[15px] text-sm font-sans"
+        className="block w-full box-border rounded border-2 border-blue-500 px-[15px] py-[10px] mb-[15px] text-sm font-sans"
       />
       <select
         {...register("category", { required: true })}
-        className="block w-full box-border rounded border border-white px-[15px] py-[10px] mb-[15px] text-sm font-sans"
+        className="block w-full box-border rounded border-2 border-blue-500 px-[15px] py-[10px] mb-[15px] text-sm font-sans"
       >
         <option value="">Select...</option>
         <option value="A">Option A</option>
@@ -71,7 +74,7 @@ export function LetsTalk() {
       <textarea
         {...register("aboutYou")}
         placeholder="About you"
-        className="block w-full box-border rounded border border-white px-[15px] py-[10px] mb-[15px] text-sm font-sans"
+        className="block w-full box-border rounded border-2 border-blue-500 px-[15px] py-[10px] mb-[15px] text-sm font-sans"
       />
       <p className="text-blue-600 text-center">{data}</p>
       <input

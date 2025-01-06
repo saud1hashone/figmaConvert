@@ -66,9 +66,9 @@ const Header = () => {
           <img src="/logo.png" alt="logo" width={120} />
 
           <nav className="flex gap-10 text-sm text-customText">
-            <a href="/" className="cursor-pointer">
+            <Link href="/" className="cursor-pointer">
               Home
-            </a>
+            </Link>
             <a href="/services" className="cursor-pointer">
               Services
             </a>
