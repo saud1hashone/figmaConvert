@@ -5,7 +5,7 @@ const SectionOne = () => {
     <div className="main flex flex-col md:flex-row items-center justify-between py-2 px-[3%] md:px-[5%] bg-hbgblue">
       <img src="/left.png" alt="" className="hidden md:block w-[200px] lg:w-[300px] h-auto" />
 
-      <div className="flex flex-col items-center gap-4 md:gap-6 py-8 md:py-2">
+      <div className="flex flex-col items-center gap-4 md:gap-6 py-2 md:py-8">
         <div className="flex items-center gap-1">
           <hr className="bg-red-500 w-4 h-1 rounded-md" />
           <span className="text-[#6e7ca0]  md:text-center">

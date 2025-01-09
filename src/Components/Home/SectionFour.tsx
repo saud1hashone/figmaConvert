@@ -34,39 +34,49 @@ const SectionFour = () => {
                 Arab Esports Broadcasters
               </h1>
               <p className="w-full md:w-[20vw] text-[#6e7ca0] pl-1">
-                Experienced play-by-play casters of Arabia Talents will level
-                up your sports events.
+                Experienced play-by-play casters of Arabia Talents will level up
+                your sports events.
               </p>
               <div className="flex items-center justify-center md:justify-start pl-1 py-2 gap-2">
                 <button className="text-sm text-[#0083ff]">
                   Meet the Faces
                 </button>
-                <img width={8} height={8} src="/playblack.png" alt="Play icon" />
+                <img
+                  width={8}
+                  height={8}
+                  src="/playblack.png"
+                  alt="Play icon"
+                />
               </div>
             </div>
           </div>
 
-          <div className="box w-full md:w-[35vw] h-auto md:h-[25vh] border flex flex-col md:flex-row relative border-gray-300 rounded-lg p-5">
+          <div className="box w-full md:w-[35vw] h-auto md:h-[25vh] pt-4 md:pt-4 border flex flex-col md:flex-row relative border-gray-300 rounded-lg p-5 md:p-0">
             <div className="order-1 md:order-2">
               <img
                 src="/right2.png"
-                className="static md:absolute md:-top-6 md:-right-1 w-42 h-32 md:w-[150px] md:h-[190px] mx-auto md:mx-0"
+                className="static md:absolute md:-top-6 md:-right-1 w-23 h-32 md:w-[150px] md:h-[190px] mx-auto md:mx-0"
                 alt="Right broadcaster"
               />
             </div>
             <div className="order-2 md:order-1 pr-0 md:pr-24 mt-4 md:mt-0 text-center md:text-left">
-              <h1 className="text-xl text-[#2d3958] mb-4 font-bold">
+              <h1 className="text-xl text-[#2d3958] mb-4 md:mb-3 font-bold ">
                 Arab Esports Broadcasters
               </h1>
-              <p className="w-full md:w-[20vw] text-[#6e7ca0] pl-1">
+              <p className="w-full md:w-[20vw] text-[#6e7ca0] pl-1 md:pr-2">
                 Experienced play-by-play casters of Arabia Talents will now
-                level up your sports events level.
+                level up your entry level.
               </p>
               <div className="flex items-center justify-center md:justify-start pl-1 py-2 gap-2">
                 <button className="text-sm text-[#2d3958]">
-                 Discover the List
+                  Discover the List
                 </button>
-                <img width={8} height={8} src="/playblack.png" alt="Play icon" />
+                <img
+                  width={8}
+                  height={8}
+                  src="/playblack.png"
+                  alt="Play icon"
+                />
               </div>
             </div>
           </div>

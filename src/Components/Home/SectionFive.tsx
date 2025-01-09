@@ -5,7 +5,7 @@ const SectionFive = () => {
     { value: "450+", label: "Awesome Talents" },
     { value: "300+", label: "Project Completed" },
     { value: "40 Million", label: "Monthly Impressions" },
-    { value: "100 Million", label: "Global Reach" }
+    { value: "100 Million", label: "Global Reach" },
   ];
 
   return (
@@ -13,9 +13,7 @@ const SectionFive = () => {
       <div className="flex flex-col pt-10 md:pt-20">
         <div className="content px-[5%] md:px-[22%] items-center justify-center flex flex-col pb-5">
           <div className="flex items-center gap-1 text-[#a044ff] font-medium bg-purple-200 py-1.5 text-sm px-3">
-            <hr className="bg-[#a044ff]" />
-            -
-            <span>Our Video</span>
+            <hr className="bg-[#a044ff]" />-<span>Our Video</span>
             -
             <hr className="bg-[#a044ff]" />
           </div>
@@ -33,27 +31,30 @@ const SectionFive = () => {
       </div>
 
       <div>
-        <div className="bg-[#18212e] flex flex-col justify-end items-center relative text-center m-auto w-full md:w-[55vw] text-white h-[20vh] md:h-[30vh]">
-          <div className="absolute rounded-3xl -top-24 md:-top-32 left-1/2 transform -translate-x-1/2">
-            <div className="bg-blue-600">
+        <div className="bg-[#18212e] flex flex-col justify-end items-center relative text-center m-auto w-full md:w-[50vw] border rounded-xl text-white h-[20vh] md:h-[30vh]">
+          <div className="absolute rounded-3xl -top-14 md:-top-32 left-1/2 transform -translate-x-1/2">
+            <div className="bg-blue-600 relative">
               <img
                 src="/Overlay.png"
                 alt="overlay"
                 className="w-[600px] md:w-[700px] h-auto"
               />
+              <Image
+                src="/playvideo.png"
+                width={50}
+                height={10}
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 md:w-12 cursor-pointer"
+                alt="Play video button"
+              />
             </div>
-            <Image
-              src="/playvideo.png"
-              width={50}
-              height={10}
-              className="absolute top-16 md:top-20 left-10 md:left-48 w-8 md:w-12"
-              alt="Play video button"
-            />
           </div>
 
           <div className="flex flex-wrap md:flex-nowrap justify-around text-center items-center gap-5 md:gap-10 pb-5 md:px-[10%]">
-            {stats.map((curElem, curIndex) =>(
-              <div key={curIndex} className="w-[40%] md:w-auto">
+            {stats.map((curElem, curIndex) => (
+              <div
+                key={curIndex}
+                className="w-[40%] md:w-auto text-xs md:text-base"
+              >
                 <h1 className="text-xl md:text-3xl">{curElem.value}</h1>
                 <p className="text-[.7rem] md:text-[.8rem]">{curElem.label}</p>
               </div>
