@@ -1,22 +1,17 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Toggle from "./card/Toggle";
 import Link from "next/link";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="relative">
-      <div className="bg-gray-200 py-2 px-4 md:px-[10%]">
-        <div className="flex justify-between text-gray-500 text-sm">
-          {/* Left Column - Language Selector */}
-          <div className="flex items-center">
-            <img
-              src="/world.png"
-              alt="world_logo"
-              width={14}
-              height={14}
-              className="mr-1"
-            />
+      <div className="bg-gray-200 py-2 pl-3 pr-2 md:px-[10%]">
+        <div className="flex justify-between text-gray-500 text-sm p-1 md:p-0">
+          <div className="flex items-center gap-1 md:gap-3">
+            <img src="/world.png" alt="world_logo" width={14} height={14} />
             <select className="bg-transparent focus:text-[#0083ff] sm:p-0 text-xs md:text-sm">
               <option value="English">English</option>
               <option value="Urdu">Urdu</option>
@@ -24,8 +19,7 @@ const Header = () => {
             </select>
           </div>
 
-          {/* Center Column - Theme Toggle */}
-          <div className="flex items-center gap-2 text-xs md:text-sm">
+          <div className="flex items-center gap-1 md:gap-2 text-xs md:text-sm">
             <span>Light</span>
             <Toggle />
             <span>Dark</span>
@@ -85,16 +79,63 @@ const Header = () => {
             width={120}
             className="w-24 md:w-32"
           />
+
           <button
-            className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 cursor-pointer"
+            className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 cursor-pointer relative mr-4"
             aria-label="Menu"
+            onClick={() => setIsOpen(!isOpen)}
           >
             <span className="block w-6 h-0.5 bg-gray-600"></span>
             <span className="block w-6 h-0.5 bg-gray-600"></span>
             <span className="block w-6 h-0.5 bg-gray-600"></span>
           </button>
 
-          <nav className="hidden md:flex gap-2 md:gap-10 text-xs md:text-sm text-customText ">
+          {isOpen && (
+            <div className="fixed flex flex-col inset-0 bg-white">
+              <div className="flex  justify-end p-6">
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="text-gray-600 hover:text-gray-800"
+                >
+                  <svg
+                    className="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div className="flex flex-col items-center gap-6 pt-10 text-xl text-gray-600">
+                <Link href="/" className="hover:text-blue-600">
+                  Home
+                </Link>
+                <Link href="/services" className="hover:text-blue-600">
+                  Services
+                </Link>
+                <Link href="/case-studies" className="hover:text-blue-600">
+                  Talents
+                </Link>
+                <Link href="/case-studies" className="hover:text-blue-600">
+                  Case Studies
+                </Link>
+                <Link href="/about" className="hover:text-blue-600">
+                  About us
+                </Link>
+                <Link href="/about" className="hover:text-blue-600">
+                  Branches
+                </Link>
+              </div>
+            </div>
+          )}
+
+          <nav className="hidden md:flex gap-2 md:gap-10 text-xs md:text-sm text-customText">
             <Link href="/" className="cursor-pointer">
               Home
             </Link>
@@ -124,7 +165,7 @@ const Header = () => {
             </select>
           </nav>
 
-          <div className=" hidden md:flex bg-[#0083ff] items-center px-3 rounded-md">
+          <div className="hidden md:flex bg-[#0083ff] items-center px-3 rounded-md">
             <Link
               href="/lets-talk"
               className="font-semibold pr-2 py-1.5 text-white"
